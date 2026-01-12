@@ -5,7 +5,6 @@
 package com.mycompany.doublelinkedlistdemo;
 
 /**
- *
  * @author malakabed
  */
 public class LinkedPositionalList <E> implements PositionalList<E>{
