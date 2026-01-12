@@ -115,10 +115,7 @@ public class LinkedPositionalList <E> implements PositionalList<E>{
         successor.setPrev(predecessor);
         size--;
         E answer = node.getElement();
-        node.setElement(null);
-        node.setNext(null);
-        node.setPrev(null);
+        node.setElement(null); // Clear the element to avoid memory leaks
         return answer;
-        
     }
 }
